@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../img/fondokim7.jpg);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo{
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    color: #e4e0f1;
+    text-shadow: 2px 2px 6px #000;
+    
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    background-color: #F2EFEA;
+    margin: 1.5em auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.container .head,
+.container .contenido,
+.container .sidebar,
+.container .footer,
+.container div{
+    padding: 15px;
+   
+}
+
+.container .head{
+    background-color: #70a9a1;
+    color: azure;
+    grid-column: 1/6;
+}
+
+
+.head img{
+    max-width: 150px;
+    width: 50%;
+    margin-left: 30px;
+}
+
+.container .contenido{
+    grid-column: span 3;
+}
+
+.sidebar{
+    grid-column: span 2;
+    background-color:#BDC4A7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar img{
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.sidebar p{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.contenido .article{
+    padding: 20px;
+    margin-top: 10px;
+    background: #22181C;
+}
+
+.contenido h1{
+    font-size: 38px;
+    text-shadow: 1px 2px 2px gray; 
+    color: aliceblue;
+}
+.contenido p{
+    font-size: 18px;
+    padding: 5px;
+    text-align: justify;
+    color: aliceblue;
+}
+
+.container .recomendaciones{
+    background: #8A9B68;
+    height: 200px;
+    margin-left:10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.recomendaciones h2{
+    text-align: center;
+}
+
+.recomendaciones img{
+    width: 170px;
+    height: 130px;
+}
+
+.recomendaciones:hover{
+    cursor: pointer;
+    color: #22181C;
+    background-color: #BDC4A7;
+}
+.container .footer{
+    background-color: #70a9a1;
+    color: black;
+    grid-column: 1/6;
+    padding: 40px;
+}
+
+footer .titulo{
+    color: var(--white-color);
+    text-align: center;
+    font-size: 40px;
+}
+
+footer .copy{
+    color: var(--white-color);
+    text-align: center;
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 23px;
+
+}
+
+.redes-sociales i{
+    font-size: 40px;
+    padding: 1px 20px 1px 20px;
+    color: #000;
+}
+
+@media screen and (max-width:320px) {
+    .titulo{
+        padding: 8px;
+        text-align: center;
+        font-size: 18px;
+        color: #e4e0f1;
+        text-shadow: 2px 2px 6px #000;   
+    }
+    .head{
+        text-align: center;
+    }
+    
+    .head img{
+        max-width: 90px;
+        width: 50%;
+    }
+    .container .contenido{
+        grid-column: 1/-1;
+    }
+    .contenido h1{
+        font-size: 20px;
+    }
+
+    .contenido p{
+        font-size: 15px;
+    }
+
+    .container .sidebar{
+        grid-column: 1/-1;
+        text-align: center;
+    }
+    .sidebar img{
+        max-width: 400px;
+        width: 90%;
+    }
+
+    .sidebar p{
+        font-size: 15px;
+    }
+
+    .recomendaciones img{
+        padding-left: 32px;
+
+    }
+    .recomendaciones h2{
+        text-align: center;
+        font-size: 18px;
+    }
+    .container .recomendaciones{
+        grid-column: 1/-1;
+    }
+
+    .container .footer{
+        background-color: #70a9a1;
+        color: black;
+        grid-column: 1/6;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer .titulo{
+        color: var(--white-color);
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    footer .copy{
+        color: var(--white-color);
+        text-align: center;
+    }
+    
+    .redes-sociales{
+        display: flex;
+        justify-content: center;
+        color: black;
+        font-size: 15px;
+    }
+    
+    .redes-sociales i{
+        font-size: 20px;
+        padding: 1px 20px 1px 20px;
+        color: #000;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .head{
+        text-align: center;
+    }
+
+    .container .contenido{
+        grid-column: 1/-1;
+    }
+    
+    .container .sidebar{
+        grid-column: 1/-1;
+        text-align: center;
+    }
+    
+    .container .recomendaciones{
+        grid-column: 1/-1;
+    }
+}
+
+/*Resoluciones medias*/
+@media screen and (max-width: 1024px) {
+        
+}
+
+/*Resoluciones macro*/
+@media screen and (max-width: 1200px) {
+
+}
