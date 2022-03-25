@@ -149,7 +149,7 @@ footer .copy{
     color: #000;
 }
 
-@media screen and (max-width:320px) {
+/*@media screen and (min-width:320px) {
     .titulo{
         padding: 8px;
         text-align: center;
@@ -233,7 +233,7 @@ footer .copy{
         padding: 1px 20px 1px 20px;
         color: #000;
     }
-}
+}*/
 
 @media screen and (max-width:768px) {
 
@@ -256,11 +256,15 @@ footer .copy{
 }
 
 /*Resoluciones medias*/
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
+.container{
+    max-width: 1200px;
+    width: 120%;
+}
         
 }
 
 /*Resoluciones macro*/
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
 
 }
